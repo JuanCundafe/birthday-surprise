@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Una sorpresa para ti 🎁</title>
+<title>Una sorpresa para ti 🎂</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,81 +16,117 @@
 
 <body>
 
+<!-- REGALO INICIAL -->
+
 <div class="gift-container" id="giftBox">
 
-🎁
-
+<div class="gift">🎁</div>
 <p>Toca el regalo</p>
 
 </div>
 
 
-<div class="content" id="content">
+<!-- CONTENIDO -->
 
-<h1>🎉 Feliz Cumpleaños 🎉</h1>
+<div class="container" id="content">
+
+<h1>Feliz Cumpleaños 🎉</h1>
 
 <div class="cake">🎂</div>
 
 <p class="message">
-Aquí escribes tu mensaje especial 💖  
-Hoy celebramos lo increíble que eres.
+Aquí puedes escribir tu mensaje especial.  
+Hoy celebramos lo increíble que eres y lo feliz que me hace compartir estos momentos contigo.
 </p>
+
 
 <h2>Nuestra historia 📖</h2>
 
-<div class="timeline">
+<section class="timeline">
 
-<div class="moment">
+
+<div class="timeline-item">
 
 <img src="images/foto1.jpg">
 
-<div class="text">
+<div class="timeline-text">
+
 <h3>Cuando nos conocimos</h3>
-<p>Este fue uno de los momentos más especiales.</p>
-</div>
+<p>Ese momento donde todo empezó.</p>
 
 </div>
 
-<div class="moment">
+</div>
+
+
+
+<div class="timeline-item">
 
 <img src="images/foto2.jpg">
 
-<div class="text">
+<div class="timeline-text">
+
 <h3>Nuestra primera aventura</h3>
-<p>Un recuerdo inolvidable.</p>
-</div>
+<p>Un recuerdo que siempre me hace sonreír.</p>
 
 </div>
 
-<div class="moment">
+</div>
+
+
+
+<!-- VIDEO SORPRESA -->
+
+<div class="timeline-item">
+
+<video controls>
+
+<source src="video/sorpresa.mp4" type="video/mp4">
+
+</video>
+
+<div class="timeline-text">
+
+<h3>Un mensaje para ti 🎥</h3>
+
+<p>
+Este video es solo para recordarte lo especial que eres.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="timeline-item">
 
 <img src="images/foto3.jpg">
 
-<div class="text">
-<h3>Momentos felices</h3>
-<p>Siempre me encanta recordar este día.</p>
-</div>
+<div class="timeline-text">
 
-</div>
-
-<div class="moment">
-
-<img src="images/foto4.jpg">
-
-<div class="text">
 <h3>Hoy</h3>
-<p>Y hoy celebramos tu cumpleaños 🎉</p>
-</div>
+
+<p>
+Y hoy celebramos tu cumpleaños 🎂
+</p>
 
 </div>
 
 </div>
 
+
+</section>
+
 </div>
+
 
 <audio id="drum">
+
 <source src="https://www.soundjay.com/human/drum-roll-1.mp3" type="audio/mpeg">
+
 </audio>
+
 
 <script src="script.js"></script>
 
