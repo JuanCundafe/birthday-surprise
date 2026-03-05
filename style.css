@@ -1,13 +1,183 @@
+:root{
+
+--bg-blue:#BFE3E6;
+--cake-yellow:#F5B335;
+--cake-orange:#F08A24;
+--cake-red:#E4564D;
+--cake-green:#4BAF8F;
+--accent-blue:#2E7F8A;
+
+}
+
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background:var(--bg-blue);
+color:#1a3a3d;
+text-align:center;
+
+}
+
+
+
+/* REGALO */
+
+.gift-container{
+
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+
+}
+
+.gift{
+
+font-size:100px;
+
+}
+
+.gift-container p{
+
+font-size:20px;
+
+}
+
+
+
+/* CONTENIDO */
+
+.container{
+
+display:none;
+max-width:700px;
+margin:auto;
+padding:30px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* TITULO */
+
+h1{
+
+color:var(--accent-blue);
+
+}
+
+
+
+/* MENSAJE */
+
+.message{
+
+font-size:18px;
+margin-bottom:40px;
+
+}
+
+
+
+/* PASTEL */
+
+.cake{
+
+font-size:80px;
+margin-bottom:20px;
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0)}
+
+}
+
+
+
+/* TIMELINE */
+
+.timeline{
+
+display:flex;
+flex-direction:column;
+gap:40px;
+
+}
+
+.timeline-item{
+
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+
+transform:translateY(60px);
+opacity:0;
+transition:all 0.8s ease;
+
+}
+
+.timeline-item.show{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+
+
+/* IMAGENES */
+
+.timeline-item img{
+
+width:100%;
+display:block;
+
+}
+
+
+
+/* TEXTO */
+
+.timeline-text{
+
+padding:20px;
+text-align:left;
+
+}
+
+.timeline-text h3{
+
+margin-top:0;
+color:var(--cake-orange);
+
+}
+
+
+
 /* VIDEO CARD */
 
 .video-card{
 
 background:#FFF7E8;
-border:3px solid #F5B335;
+border:3px solid var(--cake-yellow);
 
 }
 
-/* marco estilo tarjeta */
+
+
+/* MARCO VIDEO */
 
 .video-frame{
 
@@ -25,7 +195,9 @@ display:block;
 
 }
 
-/* etiqueta del video */
+
+
+/* ETIQUETA VIDEO */
 
 .play-label{
 
@@ -33,7 +205,7 @@ position:absolute;
 bottom:12px;
 left:12px;
 
-background:#E4564D;
+background:var(--cake-red);
 color:white;
 
 padding:6px 12px;
@@ -42,5 +214,20 @@ border-radius:20px;
 font-size:14px;
 
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(min-width:700px){
+
+.timeline{
+
+max-width:600px;
+margin:auto;
+
+}
 
 }
