@@ -1,14 +1,27 @@
-body{
+:root{
 
-margin:0;
-font-family:Arial;
-background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-text-align:center;
-color:white;
+--bg-blue:#BFE3E6;
+--cake-yellow:#F5B335;
+--cake-orange:#F08A24;
+--cake-red:#E4564D;
+--cake-green:#4BAF8F;
+--accent-blue:#2E7F8A;
 
 }
 
-/* regalo */
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background:var(--bg-blue);
+color:#1a3a3d;
+text-align:center;
+
+}
+
+
+
+/* REGALO */
 
 .gift-container{
 
@@ -17,8 +30,13 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-font-size:100px;
 cursor:pointer;
+
+}
+
+.gift{
+
+font-size:100px;
 
 }
 
@@ -28,33 +46,51 @@ font-size:20px;
 
 }
 
-/* contenido */
 
-.content{
+
+/* CONTENIDO */
+
+.container{
 
 display:none;
-padding:20px;
+max-width:700px;
+margin:auto;
+padding:30px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 
 }
+
+
+
+/* TITULO */
 
 h1{
 
-font-size:40px;
+color:var(--accent-blue);
 
 }
 
+
+
+/* MENSAJE */
+
 .message{
 
-font-size:20px;
+font-size:18px;
 margin-bottom:40px;
 
 }
 
-/* pastel */
+
+
+/* PASTEL */
 
 .cake{
 
 font-size:80px;
+margin-bottom:20px;
 animation:bounce 2s infinite;
 
 }
@@ -67,52 +103,81 @@ animation:bounce 2s infinite;
 
 }
 
-/* timeline */
+
+
+/* TIMELINE */
 
 .timeline{
 
 display:flex;
 flex-direction:column;
-gap:30px;
+gap:40px;
 
 }
 
-.moment{
+.timeline-item{
 
 background:white;
-color:black;
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+
+transform:translateY(60px);
+opacity:0;
+transition:all 0.8s ease;
 
 }
 
-.moment img{
+.timeline-item.show{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+
+
+/* IMAGENES */
+
+.timeline-item img{
 
 width:100%;
 display:block;
 
 }
 
-.text{
 
-padding:15px;
 
-}
+/* VIDEO */
 
-.text h3{
+.timeline-item video{
 
-margin:0;
-
-}
-
-.text p{
-
-margin-top:5px;
+width:100%;
+display:block;
 
 }
 
-/* desktop */
+
+
+/* TEXTO */
+
+.timeline-text{
+
+padding:20px;
+text-align:left;
+
+}
+
+.timeline-text h3{
+
+margin-top:0;
+color:var(--cake-orange);
+
+}
+
+
+
+/* RESPONSIVE */
 
 @media(min-width:700px){
 
