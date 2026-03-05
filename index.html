@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Feliz Cumpleaños 🎂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Una sorpresa para ti 🎁</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,40 +16,84 @@
 
 <body>
 
-<div class="container">
+<div class="gift-container" id="giftBox">
 
-<h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
+🎁
 
-<div class="cake">
-🎂
+<p>Toca el regalo</p>
+
 </div>
 
-<button onclick="startSurprise()">Haz clic para tu sorpresa</button>
 
-<div class="message">
-<p>
-Aquí escribes tu mensaje especial de cumpleaños 💖  
-Gracias por ser una persona tan importante en mi vida.
+<div class="content" id="content">
+
+<h1>🎉 Feliz Cumpleaños 🎉</h1>
+
+<div class="cake">🎂</div>
+
+<p class="message">
+Aquí escribes tu mensaje especial 💖  
+Hoy celebramos lo increíble que eres.
 </p>
-</div>
 
-<h2>Nuestros momentos 📷</h2>
+<h2>Nuestra historia 📖</h2>
 
-<div class="gallery">
+<div class="timeline">
+
+<div class="moment">
 
 <img src="images/foto1.jpg">
+
+<div class="text">
+<h3>Cuando nos conocimos</h3>
+<p>Este fue uno de los momentos más especiales.</p>
+</div>
+
+</div>
+
+<div class="moment">
+
 <img src="images/foto2.jpg">
+
+<div class="text">
+<h3>Nuestra primera aventura</h3>
+<p>Un recuerdo inolvidable.</p>
+</div>
+
+</div>
+
+<div class="moment">
+
 <img src="images/foto3.jpg">
 
+<div class="text">
+<h3>Momentos felices</h3>
+<p>Siempre me encanta recordar este día.</p>
 </div>
 
 </div>
 
-<audio id="drumSound">
+<div class="moment">
+
+<img src="images/foto4.jpg">
+
+<div class="text">
+<h3>Hoy</h3>
+<p>Y hoy celebramos tu cumpleaños 🎉</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<audio id="drum">
 <source src="https://www.soundjay.com/human/drum-roll-1.mp3" type="audio/mpeg">
 </audio>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
