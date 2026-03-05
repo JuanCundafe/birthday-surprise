@@ -1,6 +1,7 @@
 const gift = document.getElementById("giftBox")
 const content = document.getElementById("content")
 const drum = document.getElementById("drum")
+const music = document.getElementById("music")
 
 gift.addEventListener("click", openGift)
 
@@ -11,6 +12,8 @@ gift.style.display="none"
 content.style.display="block"
 
 drum.play()
+
+music.play()
 
 confetti({
 
