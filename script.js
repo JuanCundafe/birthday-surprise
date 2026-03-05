@@ -23,6 +23,7 @@ origin:{y:0.6}
 }
 
 
+
 /* ANIMACION TIMELINE */
 
 const items = document.querySelectorAll(".timeline-item")
@@ -46,3 +47,29 @@ items.forEach(item => {
 observer.observe(item)
 
 })
+
+
+
+/* AUTOPLAY VIDEO EN SCROLL */
+
+const video = document.querySelector(".surprise-video")
+
+const videoObserver = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+video.play()
+
+}else{
+
+video.pause()
+
+}
+
+})
+
+},{ threshold:0.6 })
+
+videoObserver.observe(video)
