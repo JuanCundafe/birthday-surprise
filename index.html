@@ -1,8 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Una sorpresa para ti 🎂</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- REGALO INICIAL -->
+
+<div class="gift-container" id="giftBox">
+
+<div class="gift">🎁</div>
+<p>Toca el regalo</p>
+
+</div>
+
+
+
+<!-- CONTENIDO PRINCIPAL -->
+
+<div class="container" id="content">
+
+<h1>Feliz Cumpleaños 🎉</h1>
+
+<div class="cake">🎂</div>
+
+<p class="message">
+Aquí puedes escribir tu mensaje especial.
+Hoy celebramos lo increíble que eres y lo feliz que me hace compartir estos momentos contigo.
+</p>
+
+
+
+<h2>Nuestra historia 📖</h2>
+
+
+<section class="timeline">
+
+
+<div class="timeline-item">
+
+<img src="images/foto1.jpg">
+
+<div class="timeline-text">
+
+<h3>Cuando nos conocimos</h3>
+<p>Ese momento donde todo empezó.</p>
+
+</div>
+
+</div>
+
+
+
+<div class="timeline-item">
+
+<img src="images/foto2.jpg">
+
+<div class="timeline-text">
+
+<h3>Nuestra primera aventura</h3>
+<p>Un recuerdo que siempre me hace sonreír.</p>
+
+</div>
+
+</div>
+
+
+
+<!-- VIDEO SORPRESA -->
+
 <div class="timeline-item video-card">
 
 <div class="video-frame">
 
-<video 
+<video
 class="surprise-video"
 playsinline
 muted
@@ -30,3 +113,42 @@ Este video es solo para recordarte lo especial que eres.
 </div>
 
 </div>
+
+
+
+<div class="timeline-item">
+
+<img src="images/foto3.jpg">
+
+<div class="timeline-text">
+
+<h3>Hoy</h3>
+
+<p>
+Y hoy celebramos tu cumpleaños 🎂
+</p>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+</div>
+
+
+
+<audio id="drum">
+
+<source src="https://www.soundjay.com/human/drum-roll-1.mp3" type="audio/mpeg">
+
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
