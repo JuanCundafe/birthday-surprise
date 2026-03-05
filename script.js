@@ -1,13 +1,21 @@
-function startSurprise(){
+const gift = document.getElementById("giftBox")
+const content = document.getElementById("content")
+const drum = document.getElementById("drum")
 
-let audio = document.getElementById("drumSound")
+gift.addEventListener("click", openGift)
 
-audio.play()
+function openGift(){
+
+gift.style.display="none"
+
+content.style.display="block"
+
+drum.play()
 
 confetti({
 
 particleCount:200,
-spread:100,
+spread:120,
 origin:{y:0.6}
 
 })
